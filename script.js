@@ -7,7 +7,7 @@ btn.addEventListener('click', createInitialPromise);
 const delayPromise (value, delay) => new Promise((resolve, reject) => { 
 	setTimeout(() =>resolve(value), delay)
 
-})
+});
   function createInitialPromise() {
   	const userTypedValue=input.value;
   
@@ -30,5 +30,5 @@ const delayPromise (value, delay) => new Promise((resolve, reject) => {
    }).then((final) => {
 	  output.textContent ='Final Result: $(Final).'; 
      
-  })
+  });
 }
